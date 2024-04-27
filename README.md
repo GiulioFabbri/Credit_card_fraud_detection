@@ -1,12 +1,17 @@
-# Credit_card_fraud_detection
-In this brief study, we will try to identify the best ML model for identifying fraudulent credit card transactions, using a deeply inbalanced dataset (https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
+## Credit card fraud detection
+This tutorial shows how to investigate the best model for detecting fraudulent credit card transactions,  
+but starting with a **very unbalanced real dataset**  
+(https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
 
-The sampling method is undersampling (1:1 ratio of target classes) which will be extended to weighted undersampling(1:100 ratio) to try to confirm our results.
+To **solve the class imbalance** we will try:
+- undersampling (reduce the dataset for having 50% fraudolent and 50% real transactions) 
+- weighted undersampling (for limiting the data loss of the undersampling)
 
-The models we will use are:
+The **models** we will use are:
 
-Logistic Model
-Random Forest
-Gaussian Naive Bayes
-Support vector Classifier
-They will be trained using scikit-learn and specifically optimized using GridSearchCV.
+- Logistic Model
+- Random Forest
+- Gaussian Naive Bayes
+- Support vector Classifier
+  
+They will be trained using **scikit-learn** and specifically optimized using **GridSearchCV**.
